@@ -1,0 +1,15 @@
+﻿@model DatabaseTest.Models.Color
+
+@{ 
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<form asp-controller="Colors" asp-action="Index" method="post">
+    <p>
+        Choose Color::
+        <input type="color" name="color" id="color" />
+        <input type="submit" value="Save" id="save" /><br />
+        
+    </p>
+</form>
